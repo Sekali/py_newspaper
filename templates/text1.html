@@ -1,0 +1,266 @@
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <title>抚州日报A版_在线报纸_抚州新闻网</title>
+                <meta name="keywords" content="在线报纸 抚州新闻网 抚州,抚州新闻,抚州新闻网,抚州新闻门户,抚州时政,抚州社会,抚州论坛,抚州人事,抚州房产 ">
+                <meta name="description" content="在线报纸 抚州新闻网 抚州新闻网（www.zgfznews.com），是由抚州市委宣传部主管，市政府新闻办、抚州日报社联合主办的新闻资讯网站，是由江西省政府新闻办公室批准，并报请国务院新闻办公室备案（备案号：赣ICP备10201717-2号）的地方门户网站。">
+                <!-- 别忘记此处的meta标签，确保IE都是在标准模式下渲染 -->
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.common.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.article.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.basecolor.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.singup.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.dialog.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.member.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.datepicker.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.special.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.index.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/templates/fznews/css/cmstop.paper.css">
+                <link rel="stylesheet" href="http://img.zgfznews.com/gg/zuanti/css/bootstrap.min.css">
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />  
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <link href="http://img.zgfznews.com/apps/paper/css/calendar.css" type="text/css" rel="stylesheet">
+                <script type="text/javascript" src="http://img.zgfznews.com/js/zeroclipboard/ZeroClipboard.js"></script>
+                <script type="text/javascript" src="http://img.zgfznews.com/js/config.js"></script>
+                <script type="text/javascript" src="http://img.zgfznews.com/templates/fznews/js/jquery/jquery-1.11.2.js"></script>
+                <script type="text/javascript" src="http://img.zgfznews.com/templates/fznews/js/jquery.cookie.js"></script>
+                <script src="http://img.zgfznews.com/templates/fznews/js/cmstop.common.js"></script>
+                <script src="http://img.zgfznews.com/templates/fznews/js/cmstop.dialog.js"></script>
+                <script src="http://img.zgfznews.com/templates/fznews/js/cmstop.datepicker.js"></script>
+                <script src="http://img.zgfznews.com/templates/fznews/js/cmstop.imagetab.js"></script>
+                <script src="http://img.zgfznews.com/templates/fznews/js/cmstop.gotop.js"></script>
+
+                <!-- IE8及IE8以下浏览器都支持HTML5 -->
+                <!--[if lt IE 9]>
+                    <script src="http://img.zgfznews.com/templates/fznews/js/html5/html5.js"></script>
+                <![endif]-->
+            
+                <!-- IE6支持png24 -->
+                <!--[if lt IE 7 ]>
+                    <script src="http://img.zgfznews.com/templates/fznews/js/ie6_png24/iepngfix_tilebg.js"></script> 
+                <![endif]-->
+    </head>
+    <body>
+        <div style="background-color:#ddd; height:40px;">
+                <img src="{{ url_for('static', filename='a.png') }}" onclick="javascript:window.history.back();" width="40px;"></img>
+        </div>
+            <div class="paper-content" style="float: none;width:100%;margin:0 auto;"> 
+                    <div class="paper-article">
+                        {% autoescape false %}
+                        {{title1}}
+                        {% if title2 %}
+                            {{title2}}
+                        {% endif %}
+                        <p class="info">
+                          <a href="http://app.zgfznews.com/?app=comment&amp;controller=review&amp;action=index&amp;topicid=43762" title="">我要评论</a>
+                          </p>
+                        
+                        {{context}}
+                        {% endautoescape %}
+                        <!-- 用户交互模块：点赞、分享、收藏等 -->
+                        <div class="hr20"></div>
+                        <div class="article-interaction">
+                            <div class="share fl-r">
+                                
+                                <!-- Baidu Button BEGIN --><div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"><span class="bds_more">分享到：</span><a class="bds_qzone" title="分享到QQ空间" href="#"></a><a class="bds_tsina" title="分享到新浪微博" href="#"></a><a class="bds_tqq" title="分享到腾讯微博" href="#"></a><a class="bds_renren" title="分享到人人网" href="#"></a><a class="bds_t163" title="分享到网易微博" href="#"></a><a class="shareCount" href="#" title="累计分享0次">0</a></div><script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=417657"></script><script type="text/javascript">document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);</script><!-- Baidu Button END -->
+                            </div>
+                            <div class="interaction ov">
+                                <a id="zeroclipboard" href="javascript:;" rel="sidebar" onclick="addfavorite();return false;" class="icon40x40 interaction-btn copy fl-l" data-clipboard-text="http://www.zgfznews.com/paper/fzrb/4815/21471/1497152.shtml"></a>
+                                <a href="javascript:;" rel="sidebar" onclick="addfavorite();return false;" class="icon40x40 interaction-btn collect fl-l"></a>
+                                <a href="http://app.zgfznews.com/print.php?contentid=1497152" target="_blank" class="icon40x40 interaction-btn print fl-l" style="margin-right:0;"></a>
+                            </div>
+                        </div>
+                        <!--
+                        <div id="related_content" class="nav">
+                        {% autoescape false %}
+                        <p>上一篇：{{last}}</p>
+                        <p>下一篇：{{next}}</p>
+                        {% endautoescape %}
+                        </div>
+                        -->
+                        <div class="hr-10"></div>
+                        <!-- 评论 -->
+                                            <div class="hr30"></div>
+                        <div class="article-comment paper-comment">
+                                    <div class="m-main">
+                                    <!-- 评论模块 -->
+                                    <!-- 评论 -->
+    <div class="article-comment" id="comment">
+        <div class="m-title-a">
+            <h2 class="m-title-h2"><a href="http://app.zgfznews.com/?app=comment&amp;controller=review&amp;action=index&amp;topicid=43762">网友评论</a></h2>
+        </div>
+        <div class="hr20"></div>
+        <div class="m-comment">
+            <div class="comment-panel ov" id="commentWrapper">
+                
+            </div>
+        </div>
+        <div class="hr20"></div>
+        <div class="userlogin-panel border1">
+            <!-- 评论框 -->
+            <div id="comment_form_1503536813" class="comment-form">
+        <div class="c-inner">
+            <form action="http://app.zgfznews.com/?app=comment&amp;controller=review&amp;action=add" method="post">
+                <input type="hidden" name="topicid" value="">
+                <input type="hidden" name="followid" value="">
+                <div class="textarea-wrap"><textarea name="content" class="textarea" style="width: 100%;"></textarea><div class="login-warn" style="display: none;"><p class="info login">
+                    您需要登录后才可以评论，<a href="javascript:;" class="cloud-login js-ajax-login" hidefocus="true">登录</a>| <a href="http://app.zgfznews.com/?app=member&amp;controller=index&amp;action=register" hidefocus="true">注册</a>
+                </p></div></div>
+                <div class="ov">
+                    <div class="loginform-user-info"><div>
+            <span class="info">
+                <a href="javascript:;" class="cloud-login js-ajax-login">登录</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://app.zgfznews.com/?app=member&amp;controller=index&amp;action=register">注册</a>
+            </span>
+            <div class="seccode-area" style="visibility: hidden;"></div>
+        </div></div>
+                    <input class="btn-post" type="submit" value="发表评论">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script id="afterlogin_1503536813" type="text/template">
+        <div>
+            <div class="username-area">
+                <em></em>
+                <a class="quickLogout" href="javascript:;">退出</a>
+            </div>
+            <span class="anonymous"></span>
+            <div class="seccode-area" style="visibility: hidden;"></div>
+        </div>
+    </script>
+    <script id="beforelogin_1503536813" type="text/template">
+        <div>
+            <span class="info">
+                <a href="javascript:;" class="cloud-login js-ajax-login">登录</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://app.zgfznews.com/?app=member&controller=index&action=register">注册</a>
+            </span>
+            <div class="seccode-area" style="visibility: hidden;"></div>
+        </div>
+    </script>
+    <script type="text/javascript" src="http://img.zgfznews.com/apps/comment/js/comment.post.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var rid = '1503536813',
+        form = $('#comment_form_'+rid).find('form');
+        commentPost = new CommentPost({
+            form: form,
+            isLogin: 0,
+            isCheck: 0,
+            isSeccode: 0,
+            topicid: topicid,
+            afterLoginTemplate: $('#afterlogin_'+rid).html(),
+            beforeLoginTemplate: $('#beforelogin_'+rid).html(),
+            userInfoPanel: form.find('.loginform-user-info'),
+            warningPanel: form.find('.login-warn'),
+            loginSelector: '.cloud-login',
+            logoutSelector: '.quickLogout'
+        });
+    });
+    </script>        <!-- @end 评论框 -->
+        </div>
+        <div class="hr40"></div>
+    </div>
+    <script type="text/javascript">
+        var commentTpl = '<div class="comment-panel ov"><div class="hr20"></div><div class="usernamephoto fl-l"><div class="userphoto defaultphoto"></div><a href="" class="username">{username}</a></div><div class="comment-infos"><div class="comment-address-date ov"><span class="fl-l">{location}</span><span class="fl-r">{date}</span></div>{follow}<div class="comment-content"><p class="">{content}</p></div><div class="comment-interaction ov"><a href="javascript:;" onclick="comment.report({commentid}, this);" class="report fl-r">举报</a><a href="" class="share fl-r">分享</a><a href="javascript:;" onclick="comment.reply({commentid});" class="reply fl-r">回复</a><a href="javascript:;" onclick="comment.support({commentid}, this);" class="love fl-r icon16x16">{supports}</a></div></div></div><div class="hr10"></div><div class="hlinedotted"></div>';
+        var followTpl = '<div class="reply-box"><div class="reply-box-username ov"><span class="floornums fl-r"></span><span>{location}</span><a href="">{username}</a></div><div class="reply-content"><p>{content}</p></div><div class="comment-interaction ov hidden"><a href="javascript:;" onclick="comment.report({commentid}, this);" class="report fl-r">举报</a><a href="" class="share fl-r">分享</a><a href="javascript:;" onclick="comment.reply({commentid});" class="reply fl-r">回复</a><a href="javascript:;" onclick="comment.support({commentid}, this);" class="love fl-r icon16x16">{supports}</a></div></div>';
+        $(function(){
+            getCommemt(topicid,$('#commentWrapper'),function(json) {
+                $('.comments').html(json.total);
+                if(json.total >0 ) $('.view-comment').show();
+            });
+        });
+        //取评论函数
+        function getCommemt(topicid,wrapper,callback) {
+            if(!topicid) return ;
+            $.getJSON(APP_URL+'?app=comment&controller=review&action=page&pagesize=5&all=1&topicid='+topicid+'&jsoncallback=?', function(json){
+                if(typeof(json.data) == 'object') {
+                    $.each(json.data, function (i, k) {
+                        var html = '';
+                        var follows = '';
+                        if (k.follow) {
+                            if (k.follow.supports == 0) k.follow.supports = ''; 
+                            follows = followTpl.replace('{username}', k.follow.username).replace('{content}', k.follow.content).replace('{date}', k.follow.date).replace('{location}', k.follow.location).replace('{commentid}', k.follow.commentid).replace('{commentid}', k.follow.commentid).replace('{commentid}', k.follow.commentid).replace('{supports}', k.follow.supports);
+                        }
+                        if (k.supports == 0) k.supports = ''; 
+                        html = commentTpl.replace('{username}', k.username).replace('{content}', k.content).replace('{date}', k.date).replace('{location}', k.location).replace('{commentid}', k.commentid).replace('{commentid}', k.commentid).replace('{commentid}', k.commentid).replace('{supports}', k.supports).replace('{follow}', follows);
+                        wrapper.append(html);
+                    });
+                }
+                // 非评论页不能进行评论操作
+                $('.operate').remove();
+                typeof callback == 'function' && callback(json);
+            });
+        }
+    </script>
+    <!-- 登录框 -->
+    <script type="text/javascript" src="http://img.zgfznews.com/js/lib/md5.js"></script>
+        <div class="singup-box singup-in-dialog hidden login-dialog-test">
+            <div class="singup-panel">
+                <div class="">
+                    <div class="m-title-a">
+                        <h2 class="m-title-h2"><a>用户登录</a></h2>
+                    </div>
+                    <div class="hr20"></div>
+                    <!-- 登录内容 -->
+                    <div class="singup-form ov">
+                        <div class="singup-form-left singup-w330 fl-l">
+                            <form onsubmit="return false;" id="memberLogin" method="post" action="http://app.cmstop.dev/?app=member&amp;controller=index&amp;action=ajaxlogin">
+                                <div class="hr20"></div>
+                                <div class="ov">
+                                    <div class="singup-line loginicon icon-user singup-item singup-w300 fl-l">
+                                        <p class="pos-a tip fz16">用户名</p>
+                                        <input type="text" name="username" id="member_login_username" class="input-text js-focus username">
+                                    </div>
+                                </div>
+                                <div class="hr40"></div>
+                                <div class="ov">
+                                    <div class="singup-line loginicon icon-pw singup-item singup-w300 fl-l">
+                                        <p class="pos-a tip fz16">密码</p>
+                                        <input type="password" name="password" id="member_login_password" class="input-text js-focus username">
+                                    </div>
+                                </div>
+                                <div class="hr30"></div>
+                                <div class="ov">
+                                    <input type="checkbox" class="fl-l" style="margin-top: 2px;margin-right: 10px;" value="1296000" name="cookietime" id="member_login_remember"><span class="fz12 fl-l margin-r-20">下次自动登录</span> <a href="http://app.zgfznews.com/?app=member&amp;controller=index&amp;action=getpassword" class="fz12 cor06c fl-l">忘记密码</a>
+                                </div>
+                                <div class="hr30"></div>
+                                <div class="ov">
+                                    <div class="memberseccode">
+                                        <input type="text" style="width: 50px;" value="验证码" name="seccode" id="member_login_seccode" class="loginform-login-input-text m-input-text fl-l i-gray" tabindex="3">
+                                        <img align="absmiddle" width="52" height="24" src="http://app.zgfznews.com/?app=system&amp;controller=seccode&amp;action=image" class="loginform-img_mar fl-l" style="cursor: pointer; width: auto; visibility: visible; opacity: 1;" id="member_login_seccodeimg">
+                                        <a onclick="this.parentNode.getElementsByTagName('img')[0].src='http://app.zgfznews.com/?app=system&amp;controller=seccode&amp;action=image&amp;action=image&amp;='+Math.random()*5;" class="reload icon16x16 fl-l" href="javascript:void(0);"></a>
+                                    </div>
+                                </div>
+                                <div class="hr30"></div>
+                                <div class="ov">
+                                    <input type="submit" value="登录" class="fl-l submit button1 margin-r-20 loginform-login-btn">
+                                    <span class="fz12" style="line-height:40px;">没有账号 <a href="http://app.zgfznews.com/?app=member&amp;controller=index&amp;action=register" class="fz12 cor06c">马上注册</a></span></div>
+                                <div class="hr40"></div>
+                            </form>
+                        </div>
+                        <div class="singup-form-right singup-w180 fl-l">
+                            <p class="fz16 title">使用第三方账号登录</p>
+                            <div class="hr20"></div>
+                            <div>
+                                <a href="javascript:;" onclick="loginThirdParty(this,'qzone')" class="web-login qq">QQ账户</a>
+                                <div class="hr30"></div>
+                                <a href="javascript:;" onclick="loginThirdParty(this,'sina_weibo')" class="web-login sina">新浪微博</a>
+                                <div class="hr30"></div>
+                                <a href="javascript:;" onclick="loginThirdParty(this,'tencent_weibo')" class="web-login tqq">腾讯微博</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="http://img.zgfznews.com/templates/fznews/js/apps/memberLogin.js"></script>                                </div>
+                                </div>
+                            </div>
+                        </div>
+    </body>
+</html>
